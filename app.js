@@ -64,6 +64,6 @@ const val = await data.save();
 
 });
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT, ()=>{
   console.log('localhost:1010')
 })
