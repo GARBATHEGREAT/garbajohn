@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => res.render('home'));
+app.get('/cv', (req, res) => res.render('cv'));
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 app.listen(PORT, () => {
