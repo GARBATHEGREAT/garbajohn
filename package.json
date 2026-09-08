@@ -1,18 +1,20 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "my portfolio website",
+  "name": "garba-john-portfolio",
+  "version": "2.0.0",
+  "description": "Professional software engineering portfolio for Garba John",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "author": "GARBA JOHN",
-  "license": "ISC",
+  "author": "Garba John",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
