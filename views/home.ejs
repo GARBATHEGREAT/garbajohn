@@ -1,40 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#10110e" />
-  <meta name="description" content="Garba John is a software developer in Abuja focused on React, JavaScript, frontend engineering and full-stack product development." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://garbajohn.vercel.app/" />
-  <meta property="og:type" content="website" /><meta property="og:url" content="https://garbajohn.vercel.app/" /><meta property="og:title" content="Garba John | Software Developer" /><meta property="og:description" content="React, frontend and full-stack developer building useful digital products." /><meta property="og:site_name" content="Garba John Portfolio" />
-  <meta name="twitter:card" content="summary" /><meta name="twitter:title" content="Garba John | Software Developer" /><meta name="twitter:description" content="React, frontend and full-stack developer building useful digital products." />
-  <title>Garba John | React & Software Developer</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07090d">
+  <meta name="description" content="Garba John is a software developer in Abuja focused on React, JavaScript, frontend engineering and full-stack product development."><meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://garbajohn.vercel.app/">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://garbajohn.vercel.app/"><meta property="og:title" content="Garba John — Software Developer"><meta property="og:description" content="React, frontend and full-stack developer building polished digital products."><meta property="og:site_name" content="Garba John Portfolio">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Garba John — Software Developer"><meta name="twitter:description" content="React, frontend and full-stack developer building polished digital products.">
+  <title>Garba John — Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/portfolio.css" />
+  <link rel="stylesheet" href="/portfolio.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Garba John","url":"https://garbajohn.vercel.app/","jobTitle":"Software Developer","address":{"@type":"PostalAddress","addressLocality":"Abuja","addressCountry":"NG"},"sameAs":["https://github.com/GARBATHEGREAT","https://linkedin.com/in/john-garba-7885a030a"],"knowsAbout":["React","JavaScript","Node.js","Frontend Development","Software Development"]}</script>
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a><div class="noise" aria-hidden="true"></div><div class="cursor-glow" id="glow" aria-hidden="true"></div>
-  <header class="nav-wrap"><nav class="nav shell" aria-label="Primary"><a class="brand" href="#top"><span>GJ</span> GARBA JOHN</a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="/cv">CV</a><a href="#contact">Contact</a></div><a class="pill small" href="/cv">View CV ↗</a></nav></header>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="boot" id="boot" aria-hidden="true"><div class="boot-mark">GJ</div><div class="boot-line"><i></i></div><span>INITIALIZING PORTFOLIO</span></div>
+  <div class="scroll-progress" id="scrollProgress"></div><div class="grain" aria-hidden="true"></div><canvas id="particleField" aria-hidden="true"></canvas><div class="cursor" id="cursor" aria-hidden="true"></div><div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <header class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a class="logo magnetic" href="#top"><span>GJ</span><b>GARBA JOHN</b></a>
+      <nav class="desktop-links" aria-label="Primary"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="/cv">CV</a></nav>
+      <a class="nav-cta magnetic" href="#contact"><i></i>AVAILABLE FOR WORK</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="/cv">CV</a><a href="#contact">CONTACT</a></div>
+  </header>
+
   <main id="main">
-    <section id="top" class="hero shell reveal"><div class="hero-orb orb-a" aria-hidden="true"></div><div class="hero-orb orb-b" aria-hidden="true"></div><div class="eyebrow"><i></i> OPEN TO SOFTWARE OPPORTUNITIES</div><h1>I build digital products<br>that <em>solve real problems.</em></h1><p class="lead">Software Developer focused on React, frontend engineering and full-stack product development — combining thoughtful interfaces with working software.</p><div class="hero-actions"><a class="pill" href="#work">Explore my work ↓</a><a class="ghost-pill" href="/cv">View my CV ↗</a><a class="text-link" href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="text-link" href="https://linkedin.com/in/john-garba-7885a030a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><div class="hero-grid"><div><span class="label">BASED IN</span><strong>Abuja, Nigeria</strong></div><div><span class="label">CORE STACK</span><strong>React · JavaScript · Node.js</strong></div><div><span class="label">FOCUS</span><strong>Web · Mobile · Product</strong></div></div></section>
-    <section class="marquee" aria-label="Technical skills"><div>REACT <b>✦</b> JAVASCRIPT <b>✦</b> NODE.JS <b>✦</b> PYTHON <b>✦</b> JAVA <b>✦</b> MONGODB <b>✦</b> SQL <b>✦</b> UI ENGINEERING <b>✦</b> REACT <b>✦</b> JAVASCRIPT <b>✦</b> NODE.JS <b>✦</b></div></section>
-    <section id="work" class="section shell reveal"><div class="section-head"><div><span class="kicker">01 / SELECTED WORK</span><h2>Projects with purpose.</h2></div><p>Healthcare, community platforms, AI/audio experimentation and full-stack product engineering.</p></div><div class="projects">
-      <article class="project tilt"><div class="project-no">01</div><div class="project-body"><span class="tag">MOBILE · HEALTHCARE</span><h3>Quick Med</h3><p>A medical emergency application designed around a real-world need. I contributed primarily to frontend/interface development while collaborating with the wider development team.</p><div class="chips"><span>Android Studio</span><span>Java</span><span>UI Development</span><span>Team Project</span></div><a href="https://github.com/JohnTombra/QuickMedicalServicesUpgrade" target="_blank" rel="noopener noreferrer">View project repository ↗</a></div><div class="visual medical" aria-hidden="true"><span>QUICK</span><strong>MED</strong><i>+</i></div></article>
-      <article class="project tilt"><div class="project-no">02</div><div class="project-body"><span class="tag">WEB · COMMUNITY PLATFORM</span><h3>Bread of Life DCM</h3><p>A responsive church platform for messages, events, ministries and community engagement, built with a modern React ecosystem.</p><div class="chips"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span></div><div class="project-links"><a href="https://breadoflifedcm.gandjtechhub.chatgpt.site" target="_blank" rel="noopener noreferrer">Live project ↗</a><a href="https://github.com/GARBATHEGREAT/BOL-church-website" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div><div class="visual church" aria-hidden="true"><span>BREAD<br>OF LIFE</span><small>DCM</small></div></article>
-      <article class="project tilt"><div class="project-no">03</div><div class="project-body"><span class="tag">AI / AUDIO · PRODUCT EXPLORATION</span><h3>CineVoice Studio</h3><p>An ongoing exploration of AI-assisted voice and audio workflows, focused on turning emerging technology into a usable product experience.</p><div class="chips"><span>AI Product</span><span>Audio</span><span>UX</span></div><span class="private-note">Private development project</span></div><div class="visual voice" aria-hidden="true"><div class="bars">▂▅▃▇▆▂▅▇▃▆▂</div><span>CINEVOICE</span></div></article>
-      <article class="project tilt"><div class="project-no">04</div><div class="project-body"><span class="tag">FINTECH · FULL-STACK PRODUCT</span><h3>Bitcoin America</h3><p>A multi-page product exploration focused on application workflows, account experiences and building a more complete software product.</p><div class="chips"><span>Full Stack</span><span>Product Design</span><span>Web App</span></div><span class="private-note">Private development project</span></div><div class="visual bitcoin" aria-hidden="true"><span>₿</span><small>BITCOIN<br>AMERICA</small></div></article>
-    </div></section>
-    <section id="about" class="section dark reveal"><div class="shell about-grid"><div><span class="kicker light">02 / ABOUT</span><h2>Developer mindset.<br><em>Product ambition.</em></h2></div><div class="about-copy"><p>I'm Garba John, a Computer Science graduate and software developer based in Abuja. My foundation spans frontend, backend, databases and Android development, with a strong focus on JavaScript and React.</p><p>I enjoy taking an idea beyond the screen design: understanding the problem, shaping the interface, connecting the pieces and learning what is needed to make the product work.</p><div class="skills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Python</span><span>PHP</span><span>Java</span><span>SQL</span><span>MongoDB</span><span>Git</span><span>Android Studio</span></div></div></div></section>
-    <section id="experience" class="section shell reveal"><span class="kicker">03 / EXPERIENCE & EDUCATION</span><div class="timeline"><article><div class="date">2022 — 2023</div><div><h3>Frontend Developer</h3><strong>Adain Technology · Mararaba, Nasarawa State</strong><p>Contributed to startup software projects including Quick Med, working on interface development, Android Studio and Java while collaborating on features, debugging and requirements.</p></div></article><article><div class="date">2019 — 2024</div><div><h3>B.Sc. Computer Science</h3><strong>Nasarawa State University, Keffi</strong><p>Second Class Lower Division.</p></div></article><article><div class="date">2021 — 2022</div><div><h3>Diploma, Computer Software Engineering</h3><strong>Lincoln College of Science and Technology, Abuja</strong><p>Software engineering and development studies.</p></div></article></div></section>
-    <section class="section shell philosophy reveal"><span class="kicker">04 / HOW I WORK</span><div class="principles"><div><b>01</b><h3>Understand</h3><p>Start with the user, the problem and what success should look like.</p></div><div><b>02</b><h3>Build</h3><p>Turn requirements into responsive, maintainable software with a strong interface.</p></div><div><b>03</b><h3>Improve</h3><p>Debug, learn, iterate and keep raising the quality of the product.</p></div></div></section>
-    <section id="contact" class="contact reveal"><div class="shell"><span class="kicker light">05 / CONTACT</span><h2>Let's build something<br><em>useful together.</em></h2><p>Open to frontend, React, software engineering and product-focused opportunities.</p><div class="cta-row"><a class="contact-mail" href="mailto:garbajohn101@gmail.com">garbajohn101@gmail.com ↗</a><a class="cv-card" href="/cv"><span>RECRUITER READY</span><strong>View résumé</strong><b>↗</b></a></div><div class="contact-bottom"><span>Abuja, Nigeria · 08107962353</span><span><a href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://linkedin.com/in/john-garba-7885a030a" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="/cv">CV</a></span></div></div></section>
+    <section class="hero-v2" id="top">
+      <div class="hero-grid-bg" aria-hidden="true"></div><div class="hero-spotlight" id="heroSpotlight" aria-hidden="true"></div>
+      <div class="shell-wide hero-layout">
+        <div class="hero-copy">
+          <div class="hero-status reveal-up"><span class="pulse-dot"></span><span>SOFTWARE DEVELOPER · ABUJA, NIGERIA</span></div>
+          <h1 class="hero-title" aria-label="I turn ideas into digital products"><span class="line"><span>I TURN IDEAS</span></span><span class="line accent-line"><span>INTO DIGITAL</span></span><span class="line"><span>PRODUCTS<span class="hero-star">✦</span></span></span></h1>
+          <div class="hero-bottom reveal-up"><p>Frontend-first developer working across <strong>React, JavaScript, Node.js</strong> and product engineering. I care about software that looks sharp, feels fast and solves something real.</p><div class="hero-actions"><a class="neo-btn bright magnetic" href="#work"><span>EXPLORE WORK</span><i>↓</i></a><a class="neo-btn magnetic" href="/cv"><span>VIEW CV</span><i>↗</i></a></div></div>
+        </div>
+        <aside class="hero-console reveal-up" aria-label="Developer profile">
+          <div class="console-head"><span><i></i><i></i><i></i></span><b>profile.js</b><em>LIVE</em></div>
+          <div class="console-body"><pre><code><span class="c-dim">01</span> <span class="c-pink">const</span> developer = {
+<span class="c-dim">02</span>   name: <span class="c-green">"Garba John"</span>,
+<span class="c-dim">03</span>   role: <span class="c-green">"Software Developer"</span>,
+<span class="c-dim">04</span>   stack: [<span class="c-green">"React"</span>, <span class="c-green">"JS"</span>, <span class="c-green">"Node"</span>],
+<span class="c-dim">05</span>   mindset: <span class="c-green">"build → learn → improve"</span>,
+<span class="c-dim">06</span>   available: <span class="c-blue">true</span>
+<span class="c-dim">07</span> };</code></pre><div class="console-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+          <div class="orbit-wrap" aria-hidden="true"><div class="orbit orbit-a"><span>REACT</span></div><div class="orbit orbit-b"><span>NODE</span></div><div class="orbit orbit-c"><span>JS</span></div><div class="orbit-core">GJ</div></div>
+        </aside>
+      </div>
+      <div class="hero-ticker"><div>DESIGN <b>✦</b> DEVELOP <b>✦</b> DEBUG <b>✦</b> SHIP <b>✦</b> LEARN <b>✦</b> REPEAT <b>✦</b> DESIGN <b>✦</b> DEVELOP <b>✦</b> DEBUG <b>✦</b> SHIP <b>✦</b> LEARN <b>✦</b> REPEAT <b>✦</b></div></div>
+    </section>
+
+    <section class="signal-strip">
+      <div class="shell-wide signal-grid reveal-up"><div><span>FEATURED BUILDS</span><strong data-count="4">4</strong><small>PROJECTS</small></div><div><span>TECH TOOLKIT</span><strong data-count="10">10+</strong><small>TECHNOLOGIES</small></div><div><span>EDUCATION</span><strong data-count="2">2</strong><small>CREDENTIALS</small></div><div class="signal-note"><span>OPERATING MODE</span><p>Curious. Product-minded. Always improving the build.</p></div></div>
+    </section>
+
+    <section class="work-v2" id="work">
+      <div class="shell-wide">
+        <div class="section-intro reveal-up"><span class="section-index">01</span><div><p class="eyebrow-v2">SELECTED WORK / CASE STUDIES</p><h2>BUILDING BEYOND<br><em>THE MOCKUP.</em></h2></div><p class="intro-copy">Projects across healthcare, community platforms, AI/audio and full-stack product exploration. Open a case study to see the thinking behind each build.</p></div>
+
+        <div class="project-stack">
+          <article class="project-v2 mint reveal-up" data-tilt>
+            <a class="project-hit" href="/projects/quick-med" aria-label="Open Quick Med case study"></a><div class="project-top"><span>01 / MOBILE · HEALTHCARE</span><span>CASE STUDY ↗</span></div>
+            <div class="project-content"><div class="project-copy"><h3>QUICK<br>MED</h3><p>Medical emergency software shaped around fast, understandable user actions.</p><div class="project-tags"><span>ANDROID STUDIO</span><span>JAVA</span><span>UI DEVELOPMENT</span></div></div><div class="project-art art-med"><div class="phone-frame"><div class="phone-notch"></div><div class="med-ui"><i>+</i><b>QUICK MED</b><span>Emergency assistance</span><div class="fake-button">GET HELP</div></div></div><div class="ring r1"></div><div class="ring r2"></div></div></div>
+          </article>
+
+          <article class="project-v2 gold reveal-up" data-tilt>
+            <a class="project-hit" href="/projects/bread-of-life" aria-label="Open Bread of Life DCM case study"></a><div class="project-top"><span>02 / WEB · COMMUNITY</span><span>CASE STUDY ↗</span></div>
+            <div class="project-content"><div class="project-copy"><h3>BREAD OF<br>LIFE DCM</h3><p>A responsive ministry platform for messages, events, ministries and community connection.</p><div class="project-tags"><span>REACT</span><span>NEXT.JS</span><span>TYPESCRIPT</span></div></div><div class="project-art art-church"><div class="browser-card"><div class="browser-bar"><i></i><i></i><i></i></div><div class="church-screen"><small>BREAD OF LIFE</small><strong>FAITH.<br>COMMUNITY.<br>PURPOSE.</strong><span>Explore messages →</span></div></div></div></div>
+          </article>
+
+          <article class="project-v2 violet reveal-up" data-tilt>
+            <a class="project-hit" href="/projects/cinevoice" aria-label="Open CineVoice Studio case study"></a><div class="project-top"><span>03 / AI · AUDIO PRODUCT</span><span>CASE STUDY ↗</span></div>
+            <div class="project-content"><div class="project-copy"><h3>CINEVOICE<br>STUDIO</h3><p>Product exploration around AI-assisted voice workflows and real-time audio interaction.</p><div class="project-tags"><span>AI WORKFLOWS</span><span>AUDIO UX</span><span>PRODUCT DESIGN</span></div></div><div class="project-art art-voice"><div class="voice-core"><span>VOICE</span><i></i></div><div class="waveform">▂▅▃▇▆▂▅▇▃▆▂▇▅▃▆</div><div class="sound-ring s1"></div><div class="sound-ring s2"></div><div class="sound-ring s3"></div></div></div>
+          </article>
+
+          <article class="project-v2 orange reveal-up" data-tilt>
+            <a class="project-hit" href="/projects/bitcoin-america" aria-label="Open Bitcoin America case study"></a><div class="project-top"><span>04 / FINTECH · FULL STACK</span><span>CASE STUDY ↗</span></div>
+            <div class="project-content"><div class="project-copy"><h3>BITCOIN<br>AMERICA</h3><p>A multi-page product exploration focused on user flows, dashboards and complete application thinking.</p><div class="project-tags"><span>FULL STACK</span><span>WEB APP</span><span>PRODUCT UX</span></div></div><div class="project-art art-bitcoin"><div class="coin">₿</div><div class="chart"><i style="height:34%"></i><i style="height:52%"></i><i style="height:43%"></i><i style="height:68%"></i><i style="height:61%"></i><i style="height:82%"></i><i style="height:76%"></i></div><span class="market-label">PRODUCT / FINTECH / WEB</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-v2" id="about">
+      <div class="about-grid-lines" aria-hidden="true"></div>
+      <div class="shell-wide about-layout">
+        <div class="about-left reveal-up"><span class="section-index light-index">02</span><p class="eyebrow-v2 light-text">ABOUT / MINDSET</p><h2>CODE IS THE TOOL.<br><em>THE PRODUCT IS<br>THE POINT.</em></h2></div>
+        <div class="about-right reveal-up"><p class="about-lead">I'm a Computer Science graduate and software developer who enjoys taking an idea from <strong>rough concept to working interface.</strong></p><p>My experience spans frontend development, Android work, databases and product experimentation. React and JavaScript are at the center of my current focus, but I'm comfortable learning whatever the product needs.</p><div class="about-links"><a class="neo-btn inverted magnetic" href="/cv"><span>OPEN FULL CV</span><i>↗</i></a><a class="plain-link" href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GITHUB PROFILE ↗</a></div></div>
+      </div>
+      <div class="tech-belt"><div><span>HTML5</span><span>CSS3</span><span>JAVASCRIPT</span><span>REACT</span><span>NODE.JS</span><span>PYTHON</span><span>PHP</span><span>JAVA</span><span>SQL</span><span>MONGODB</span><span>GIT</span><span>ANDROID STUDIO</span><span>HTML5</span><span>CSS3</span><span>JAVASCRIPT</span><span>REACT</span></div></div>
+    </section>
+
+    <section class="experience-v2" id="experience">
+      <div class="shell-wide">
+        <div class="section-intro reveal-up"><span class="section-index">03</span><div><p class="eyebrow-v2">EXPERIENCE / EDUCATION</p><h2>THE PATH<br><em>SO FAR.</em></h2></div><p class="intro-copy">A foundation built through formal computer science education, software engineering study and practical development work.</p></div>
+        <div class="timeline-v2">
+          <article class="timeline-row reveal-up"><span class="timeline-year">2022—2023</span><div class="timeline-dot"></div><div><small>EXPERIENCE</small><h3>Frontend Developer</h3><strong>Adain Technology · Mararaba, Nasarawa State</strong><p>Startup software development, Quick Med interface work, Android Studio, Java, debugging and collaborative feature development.</p></div><span class="timeline-arrow">↗</span></article>
+          <article class="timeline-row reveal-up"><span class="timeline-year">2019—2024</span><div class="timeline-dot"></div><div><small>EDUCATION</small><h3>B.Sc. Computer Science</h3><strong>Nasarawa State University, Keffi</strong><p>Computer science degree with a broad software and computing foundation.</p></div><span class="timeline-arrow">↗</span></article>
+          <article class="timeline-row reveal-up"><span class="timeline-year">2021—2022</span><div class="timeline-dot"></div><div><small>EDUCATION</small><h3>Diploma, Computer Software Engineering</h3><strong>Lincoln College of Science and Technology, Abuja</strong><p>Focused study in software engineering and development.</p></div><span class="timeline-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-v2" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div><div class="shell-wide contact-layout reveal-up">
+        <div><span class="contact-kicker"><i></i>AVAILABLE FOR THE RIGHT OPPORTUNITY</span><h2>HAVE A PROBLEM<br>WORTH <em>BUILDING?</em></h2></div>
+        <div class="contact-side"><p>Frontend. React. Software development. Product-focused work. If you're building something useful, I'd like to hear about it.</p><a class="mega-mail magnetic" href="mailto:garbajohn101@gmail.com"><span>EMAIL ME</span><i>↗</i></a><div class="contact-socials"><a href="https://linkedin.com/in/john-garba-7885a030a" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="/cv">CV ↗</a></div></div>
+      </div>
+      <div class="footer-line shell-wide"><span>© 2026 GARBA JOHN</span><span>ABUJA, NIGERIA</span><span>BUILT TO EVOLVE.</span></div>
+    </section>
   </main>
-  <script>
-    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,nav=document.querySelector('.nav-wrap'); addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
-    if(!reduce&&matchMedia('(pointer:fine)').matches){const glow=document.getElementById('glow');addEventListener('pointermove',e=>{glow.style.transform=`translate(${e.clientX-180}px,${e.clientY-180}px)`},{passive:true});document.querySelectorAll('.tilt').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(1200px) rotateX(${-y*2}deg) rotateY(${x*2}deg) translateY(-3px)`});card.addEventListener('pointerleave',()=>card.style.transform='')})}
-    if('IntersectionObserver'in window&&!reduce){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(x=>io.observe(x))}else document.querySelectorAll('.reveal').forEach(x=>x.classList.add('show'));
-  </script>
-</body></html>
+  <script src="/portfolio.js" defer></script>
+</body>
+</html>
