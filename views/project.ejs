@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07090d">
+  <meta name="description" content="<%= project.title %> — project case study by Garba John, Software Developer.">
+  <title><%= project.title %> | Garba John</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/portfolio.css">
+</head>
+<body class="case-page case-<%= project.accent %>">
+  <div class="scroll-progress" id="scrollProgress"></div><div class="grain" aria-hidden="true"></div>
+  <header class="site-nav compact"><div class="nav-inner"><a class="logo" href="/"><span>GJ</span><b>GARBA JOHN</b></a><a class="case-back" href="/#work">← ALL PROJECTS</a></div></header>
+  <main class="case-main">
+    <section class="case-hero shell-wide">
+      <div class="case-meta"><span><%= project.number %></span><span><%= project.eyebrow %></span><span><%= project.year %></span></div>
+      <h1><%= project.title %></h1>
+      <p class="case-summary"><%= project.summary %></p>
+      <div class="case-actions">
+        <% if (project.live) { %><a class="neo-btn bright magnetic" href="<%= project.live %>" target="_blank" rel="noopener noreferrer"><span>OPEN LIVE PROJECT</span><i>↗</i></a><% } %>
+        <% if (project.repo) { %><a class="neo-btn magnetic" href="<%= project.repo %>" target="_blank" rel="noopener noreferrer"><span>VIEW SOURCE</span><i>↗</i></a><% } %>
+        <% if (project.private) { %><span class="private-pill">PRIVATE DEVELOPMENT PROJECT</span><% } %>
+      </div>
+      <div class="case-visual <%= project.accent %>"><div class="case-grid"></div><span class="huge-index"><%= project.number %></span><div class="case-orbit"><i></i><i></i><i></i></div><strong><%= project.title.toUpperCase() %></strong></div>
+    </section>
+    <section class="case-details shell-wide reveal-up">
+      <div class="case-facts"><div><span>ROLE</span><strong><%= project.role %></strong></div><div><span>YEAR</span><strong><%= project.year %></strong></div><div><span>STACK</span><strong><%= project.stack.join(' · ') %></strong></div></div>
+      <div class="case-story">
+        <article><span>01 / CHALLENGE</span><h2>What needed solving.</h2><p><%= project.challenge %></p></article>
+        <article><span>02 / CONTRIBUTION</span><h2>What I worked on.</h2><p><%= project.contribution %></p></article>
+        <article><span>03 / OUTCOME</span><h2>What I took forward.</h2><p><%= project.outcome %></p></article>
+      </div>
+    </section>
+    <section class="case-next"><div class="shell-wide"><span>NEXT MOVE</span><h2>Back to the full portfolio.</h2><a class="neo-btn bright magnetic" href="/#work"><span>EXPLORE MORE WORK</span><i>→</i></a></div></section>
+  </main>
+  <script src="/portfolio.js" defer></script>
+</body></html>
