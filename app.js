@@ -13,6 +13,10 @@ app.get('/', (req, res) => res.render('home'));
 app.get('/cv', (req, res) => res.render('cv'));
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
-app.listen(PORT, () => {
-  console.log(`Garba John portfolio running on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Garba John portfolio running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
