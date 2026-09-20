@@ -12,39 +12,39 @@ app.use(express.urlencoded({ extended: true }));
 const projects = {
   'quick-med': {
     number: '01', title: 'Quick Med', eyebrow: 'MOBILE / HEALTHCARE', accent: 'mint',
-    summary: 'A medical emergency application built around a real-world need: helping people respond to emergency situations through a clearer, more usable mobile experience.',
-    role: 'Frontend / Interface Development', year: '2022–2023', stack: ['Android Studio', 'Java', 'UI Development', 'Team Collaboration'],
-    challenge: 'Emergency software has to communicate quickly. The interface needed to make important actions understandable without adding unnecessary complexity.',
-    contribution: 'I contributed primarily to frontend and interface development while collaborating with the wider development team on requirements, debugging and iterative improvements.',
-    outcome: 'The project gave me practical experience building software around real user needs while working inside a collaborative development workflow.',
-    repo: 'https://github.com/JohnTombra/QuickMedicalServicesUpgrade'
+    summary: 'An Android emergency-response application that guides users through ambulance, hospital, map, account and payment flows with clear mobile interfaces.',
+    role: 'Frontend / Android UI Development', year: '2022–2023', stack: ['Android Studio', 'Java', 'XML Layouts', 'Material Components'],
+    challenge: 'Emergency software has to make important actions understandable quickly while connecting several multi-screen service journeys.',
+    contribution: 'I contributed to the Java and Android interface layer, refining navigation, screen states and UI flows across emergency selection, ambulance and hospital journeys, maps and payments.',
+    outcome: 'The project strengthened my experience turning requirements into usable mobile screens, debugging interactions and collaborating inside an existing application codebase.',
+    repo: 'https://github.com/GARBATHEGREAT/quickmed'
   },
   'bread-of-life': {
     number: '02', title: 'Bread of Life DCM', eyebrow: 'WEB / COMMUNITY PLATFORM', accent: 'gold',
-    summary: 'A modern church platform designed to make messages, events, ministries and community information easy to discover across devices.',
-    role: 'Web Product Development', year: '2026', stack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    challenge: 'The platform needed to organize a broad amount of ministry content without making the experience feel crowded or difficult to navigate.',
-    contribution: 'I worked on the responsive product experience, content structure and interface direction using a modern React-based stack.',
-    outcome: 'The result is a multi-section community platform designed to support both first-time visitors and returning members.',
-    repo: 'https://github.com/GARBATHEGREAT/BOL-church-website', live: 'https://breadoflifedcm.gandjtechhub.chatgpt.site'
+    summary: 'A live ministry platform with a responsive public experience and a private dashboard for managing content, media, events and visitor messages.',
+    role: 'Frontend & Full-Stack Web Development', year: '2026', stack: ['React', 'TypeScript', 'Vite / Vinext', 'Drizzle ORM', 'SQLite / D1'],
+    challenge: 'The site needed to organize sermons, ministries, events, galleries and visitor information while remaining simple for church administrators to update.',
+    contribution: 'I built the responsive public interface and content-management flows for text, images, videos, slides, service details, social links and submissions, including protected admin access and uploads.',
+    outcome: 'The production site gives visitors a polished cross-device experience while allowing the ministry team to update day-to-day content without editing source code.',
+    repo: 'https://github.com/GARBATHEGREAT/BOL-church-website', live: 'https://breadoflifedcm.org', published: true
   },
   'cinevoice': {
     number: '03', title: 'CineVoice Studio', eyebrow: 'AI / AUDIO PRODUCT', accent: 'violet',
-    summary: 'An ongoing product exploration around AI-assisted voice and audio workflows, with emphasis on clarity, usability and real-time interaction.',
-    role: 'Product / Software Exploration', year: '2026', stack: ['AI Workflows', 'Audio UX', 'Product Design', 'Software Prototyping'],
-    challenge: 'Powerful AI audio tools can quickly become complicated. The product direction focuses on making advanced workflows feel approachable and controlled.',
-    contribution: 'I have been exploring product structure, interaction flows and implementation patterns for voice and audio experiences.',
-    outcome: 'The project reflects my interest in turning emerging technology into software that feels understandable and useful.',
-    private: true
+    summary: 'A Windows-first real-time voice application for clean microphone routing, authorized RVC conversion, voice-model management, recording and local GPU training.',
+    role: 'Product & Python Application Development', year: '2026', stack: ['Python 3.12', 'PySide6', 'FastAPI', 'CUDA / RVC', 'RMVPE'],
+    challenge: 'Advanced voice-conversion workflows combine audio devices, GPU inference, model files and latency-sensitive controls that can easily overwhelm users.',
+    contribution: 'I developed the desktop workflow, live audio controls, model library, authorized training flow, device routing and RTX 3050-oriented presets around a Python and CUDA inference stack.',
+    outcome: 'CineVoice packages a complex local AI-audio pipeline into a focused interface for calls, OBS, games and recordings, with consent and model licensing built into the workflow.',
+    live: 'https://cinevoice-studio.vercel.app', private: true, published: true
   },
   'bitcoin-america': {
     number: '04', title: 'Bitcoin America', eyebrow: 'FINTECH / FULL-STACK PRODUCT', accent: 'orange',
-    summary: 'A broader multi-page software product exploration focused on account flows, dashboards and building a more complete application experience.',
-    role: 'Full-Stack Product Exploration', year: '2026', stack: ['Full Stack', 'Product Design', 'Web Application', 'UX Flows'],
-    challenge: 'The goal is to move beyond isolated screens and think through how a complete application behaves across multiple user journeys.',
-    contribution: 'I have been developing the product structure, interface direction and application workflows as part of my progression toward more complete software products.',
-    outcome: 'The project is part of my ongoing work to strengthen end-to-end product engineering skills.',
-    private: true
+    summary: 'A live non-custodial crypto decision-support product with market data, calculators, paper portfolios, watchlists, alerts, learning progress and an admin analytics console.',
+    role: 'Full-Stack Product Development', year: '2026', stack: ['Next.js', 'TypeScript', 'Clerk', 'Neon Postgres', 'Drizzle ORM'],
+    challenge: 'The product needed to bring market research, planning tools, education and saved member data together without handling customer funds or encouraging unsafe trading behavior.',
+    contribution: 'I built multi-route product flows, authenticated member and admin experiences, persisted portfolio and learning data, server-side market integration and responsive application states.',
+    outcome: 'The deployed application demonstrates complete product thinking across public pages, authentication, live data, database-backed workspaces, calculators and operational admin tools.',
+    live: 'https://bitcoin-america.vercel.app', private: true, published: true
   }
 };
 

@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/portfolio.css">
+  <link rel="stylesheet" href="/portfolio-enhancements.css">
 </head>
 <body class="case-page case-<%= project.accent %>">
   <div class="scroll-progress" id="scrollProgress"></div><div class="grain" aria-hidden="true"></div>
@@ -19,7 +20,7 @@
       <div class="case-actions">
         <% if (project.live) { %><a class="neo-btn bright magnetic" href="<%= project.live %>" target="_blank" rel="noopener noreferrer"><span>OPEN LIVE PROJECT</span><i>↗</i></a><% } %>
         <% if (project.repo) { %><a class="neo-btn magnetic" href="<%= project.repo %>" target="_blank" rel="noopener noreferrer"><span>VIEW SOURCE</span><i>↗</i></a><% } %>
-        <% if (project.private) { %><span class="private-pill">PRIVATE DEVELOPMENT PROJECT</span><% } %>
+        <% if (project.private) { %><span class="private-pill">PRIVATE SOURCE · PUBLIC PRODUCT</span><% } %>
       </div>
       <div class="case-visual <%= project.accent %>"><div class="case-grid"></div><span class="huge-index"><%= project.number %></span><div class="case-orbit"><i></i><i></i><i></i></div><strong><%= project.title.toUpperCase() %></strong></div>
     </section>
