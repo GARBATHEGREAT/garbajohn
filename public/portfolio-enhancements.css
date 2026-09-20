@@ -158,6 +158,10 @@
   text-decoration: none;
 }
 
+.command-list a[hidden] {
+  display: none;
+}
+
 .command-list a:hover,
 .command-list a.is-selected {
   background: #111923;
