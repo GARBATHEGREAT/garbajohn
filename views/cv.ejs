@@ -130,6 +130,21 @@
 
     .cv-contact a { text-underline-offset: 3px; }
 
+    .cv-identity {
+      align-items: end;
+      display: flex;
+      gap: 18px;
+      justify-content: end;
+    }
+
+    .cv-photo {
+      border: 1px solid var(--ink);
+      height: 136px;
+      object-fit: cover;
+      object-position: center 23%;
+      width: 104px;
+    }
+
     .proof-strip {
       border-bottom: 1px solid var(--line);
       display: grid;
@@ -220,6 +235,7 @@
       .cv-bar { grid-template-columns: 1fr auto; }
       .cv-nav { display: none; }
       .cv-hero { grid-template-columns: 1fr; gap: 26px; padding: 42px 34px 30px; }
+      .cv-identity { justify-content: start; }
       .cv-contact { justify-items: start; text-align: left; }
       .cv-section { gap: 16px; grid-template-columns: 1fr; padding: 31px 34px; }
       .proof-strip { grid-template-columns: 1fr; }
@@ -232,6 +248,7 @@
       .cv-actions .copy-email { display: none; }
       .cv-action { font-size: 10px; padding: 10px 12px; }
       .cv-hero { padding: 34px 22px 28px; }
+      .cv-photo { height: 108px; width: 82px; }
       .cv-section { padding: 28px 22px; }
       .skills-grid { grid-template-columns: 1fr; }
       .item-heading { display: grid; gap: 5px; }
@@ -281,13 +298,16 @@
           <h1>GARBA<br>JOHN</h1>
           <div class="cv-role">FRONTEND DEVELOPMENT · REACT · FULL-STACK PRODUCT DELIVERY</div>
         </div>
-        <address class="cv-contact">
-          <span>Abuja, Nigeria</span>
-          <a href="tel:+2348107962353">+234 810 796 2353</a>
-          <a href="mailto:garbajohn101@gmail.com">garbajohn101@gmail.com</a>
-          <a href="https://garbajohn.vercel.app" target="_blank" rel="noopener noreferrer">garbajohn.vercel.app</a>
-          <span><a href="https://linkedin.com/in/john-garba-7885a030a" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GitHub</a></span>
-        </address>
+        <div class="cv-identity">
+          <img class="cv-photo" src="/images/garba-john-portrait.webp" alt="Garba John" width="1024" height="1536">
+          <address class="cv-contact">
+            <span>Abuja, Nigeria</span>
+            <a href="tel:+2348107962353">+234 810 796 2353</a>
+            <a href="mailto:garbajohn101@gmail.com">garbajohn101@gmail.com</a>
+            <a href="https://garbajohn.vercel.app" target="_blank" rel="noopener noreferrer">garbajohn.vercel.app</a>
+            <span><a href="https://linkedin.com/in/john-garba-7885a030a" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/GARBATHEGREAT" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+          </address>
+        </div>
       </header>
 
       <section class="proof-strip" aria-label="Portfolio summary">
@@ -345,10 +365,10 @@
           </article>
 
           <article class="project-item">
-            <div class="project-heading"><h2>Bitcoin America</h2><span class="project-status">LIVE</span></div>
-            <div class="project-stack">Next.js · TypeScript · Clerk · Neon Postgres · Drizzle ORM · CoinGecko API</div>
-            <p>Built a non-custodial crypto decision-support product with live markets, planning calculators, paper portfolios, watchlists, alerts, academy progress, member feedback and an authenticated admin analytics console.</p>
-            <div class="project-links"><a href="https://bitcoin-america.vercel.app" target="_blank" rel="noopener noreferrer">Live product ↗</a><a href="/projects/bitcoin-america">Case study ↗</a></div>
+            <div class="project-heading"><h2>GandJ Trading Platform</h2><span class="project-status">LIVE</span></div>
+            <div class="project-stack">Next.js · TypeScript · Clerk · Neon Postgres · Drizzle ORM · TradingView · MT5 Demo</div>
+            <p>Built a compliance-first trading sandbox with authenticated workflows, market research, dedicated charts, a TradingView workspace and MT5 demo onboarding, while keeping real funds and live execution disabled ahead of licensing.</p>
+            <div class="project-links"><a href="https://bitcoin-america.vercel.app" target="_blank" rel="noopener noreferrer">Live sandbox ↗</a><a href="/projects/gandj">Case study ↗</a></div>
           </article>
 
           <article class="project-item">

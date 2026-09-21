@@ -37,19 +37,20 @@ const projects = {
     outcome: 'CineVoice packages a complex local AI-audio pipeline into a focused interface for calls, OBS, games and recordings, with consent and model licensing built into the workflow.',
     live: 'https://cinevoice-studio.vercel.app', private: true, published: true
   },
-  'bitcoin-america': {
-    number: '04', title: 'Bitcoin America', eyebrow: 'FINTECH / FULL-STACK PRODUCT', accent: 'orange',
-    summary: 'A live non-custodial crypto decision-support product with market data, calculators, paper portfolios, watchlists, alerts, learning progress and an admin analytics console.',
+  'gandj': {
+    number: '04', title: 'GandJ Trading Platform', eyebrow: 'FINTECH / TRADING SANDBOX', accent: 'orange',
+    summary: 'A compliance-first trading sandbox with market research, dedicated charts, a TradingView workspace and MT5 demo onboarding—built for practice without real funds or live execution.',
     role: 'Full-Stack Product Development', year: '2026', stack: ['Next.js', 'TypeScript', 'Clerk', 'Neon Postgres', 'Drizzle ORM'],
-    challenge: 'The product needed to bring market research, planning tools, education and saved member data together without handling customer funds or encouraging unsafe trading behavior.',
-    contribution: 'I built multi-route product flows, authenticated member and admin experiences, persisted portfolio and learning data, server-side market integration and responsive application states.',
-    outcome: 'The deployed application demonstrates complete product thinking across public pages, authentication, live data, database-backed workspaces, calculators and operational admin tools.',
+    challenge: 'The product needed to connect market research, charting and platform onboarding in one credible experience while keeping a clear demo-only boundary ahead of licensing.',
+    contribution: 'I built the authenticated multi-route product, dedicated chart and platform pages, TradingView workspace, MT5 demo flow, persisted user data, responsive states and safety gating.',
+    outcome: 'GandJ Trading Platform V2 demonstrates end-to-end fintech product delivery for sandbox exploration while keeping real trading, live execution and customer funds disabled.',
     live: 'https://bitcoin-america.vercel.app', private: true, published: true
   }
 };
 
 app.get('/', (req, res) => res.render('home'));
 app.get('/cv', (req, res) => res.render('cv'));
+app.get('/projects/bitcoin-america', (req, res) => res.redirect(301, '/projects/gandj'));
 app.get('/projects/:slug', (req, res) => {
   const project = projects[req.params.slug];
   if (!project) return res.status(404).redirect('/#work');

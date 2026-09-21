@@ -216,6 +216,122 @@ body.command-open {
   transform: translateY(5px);
 }
 
+.hero-profile-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  isolation: isolate;
+  transform: perspective(1300px) rotateX(var(--rx)) rotateY(var(--ry));
+  transform-style: preserve-3d;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 180ms ease;
+}
+
+.hero-profile-card:hover {
+  border-color: #4d5b6d;
+  box-shadow: 0 42px 110px rgba(0, 0, 0, .5), 0 0 0 1px rgba(183, 255, 82, .08);
+}
+
+.portrait-stage {
+  bottom: 44px;
+  overflow: hidden;
+  position: absolute;
+  top: 46px;
+  width: 100%;
+}
+
+.portrait-stage::after {
+  background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 30%), rgba(183, 255, 82, .12), transparent 58%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.portrait-image {
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+  transform: scale(1.015);
+  transition: filter 300ms ease, transform 500ms cubic-bezier(.2, .8, .2, 1);
+  width: 100%;
+}
+
+.hero-profile-card:hover .portrait-image {
+  filter: saturate(1.06) contrast(1.02);
+  transform: scale(1.045);
+}
+
+.portrait-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
+  background-size: 38px 38px;
+  inset: 0;
+  mask-image: linear-gradient(to bottom, transparent 20%, black 100%);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.portrait-role {
+  background: rgba(7, 10, 14, .82);
+  border: 1px solid rgba(183, 255, 82, .55);
+  color: var(--acid);
+  font: 500 8px DM Mono, monospace;
+  left: 18px;
+  letter-spacing: .14em;
+  padding: 8px 10px;
+  position: absolute;
+  top: 18px;
+  z-index: 3;
+}
+
+.portrait-caption {
+  background: linear-gradient(180deg, transparent, rgba(5, 7, 10, .93) 38%);
+  bottom: 0;
+  display: grid;
+  gap: 8px;
+  left: 0;
+  padding: 62px 20px 20px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.portrait-caption small {
+  color: #a7b1bf;
+  font: 500 8px DM Mono, monospace;
+  letter-spacing: .15em;
+}
+
+.portrait-caption strong {
+  color: #f2f7ef;
+  font-size: 22px;
+  letter-spacing: -.04em;
+}
+
+.portrait-footer {
+  align-items: center;
+  background: #0a0e14;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 44px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.portrait-footer span {
+  border-right: 1px solid #232c38;
+  color: #798596;
+  font: 500 7px DM Mono, monospace;
+  letter-spacing: .08em;
+  text-align: center;
+}
+
+.portrait-footer span:last-child {
+  border-right: 0;
+}
+
 .work-controls {
   align-items: end;
   display: flex;
@@ -469,6 +585,14 @@ body.command-open {
 
   .capability-panel {
     min-height: 250px;
+  }
+
+  .portrait-image {
+    object-position: center 22%;
+  }
+
+  .portrait-caption strong {
+    font-size: 19px;
   }
 }
 
