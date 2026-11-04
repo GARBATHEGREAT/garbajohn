@@ -607,3 +607,4 @@ body.command-open {
     transition: none;
   }
 }
+.art-eval .eval-chart{bottom:12%;height:90px}.art-eval .eval-chart i{background:linear-gradient(#b7a0ff,rgba(157,124,255,.08));border-top:1px solid #d3c5ff}.art-eval .voice-core{position:absolute;top:18%}.art-eval .market-label{color:#8a7bc2}

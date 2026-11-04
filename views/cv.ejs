@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0a0d12">
-  <meta name="description" content="Professional CV of Garba John, a software developer in Abuja with frontend, full-stack, Android and AI-audio product experience.">
+  <meta name="description" content="Professional CV of Garba John, a software engineer in Abuja with AI model evaluation, Python, full-stack and Android experience.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://garbajohn.vercel.app/cv">
-  <title>Garba John | Software Developer CV</title>
+  <title>Garba John | Software Engineer CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -294,9 +294,9 @@
     <article class="cv-paper">
       <header class="cv-hero">
         <div>
-          <span class="cv-kicker">SOFTWARE DEVELOPER</span>
+          <span class="cv-kicker">SOFTWARE ENGINEER</span>
           <h1>GARBA<br>JOHN</h1>
-          <div class="cv-role">FRONTEND DEVELOPMENT · REACT · FULL-STACK PRODUCT DELIVERY</div>
+          <div class="cv-role">AI MODEL EVALUATION · PYTHON · TYPESCRIPT · CODE REVIEW</div>
         </div>
         <div class="cv-identity">
           <img class="cv-photo" src="/images/garba-john-portrait.webp" alt="Garba John" width="1024" height="1536">
@@ -311,7 +311,7 @@
       </header>
 
       <section class="proof-strip" aria-label="Portfolio summary">
-        <div><span>FEATURED WORK</span><strong>4 detailed builds</strong></div>
+        <div><span>FEATURED WORK</span><strong>5 detailed builds</strong></div>
         <div><span>PRODUCTION PROOF</span><strong>3 live products</strong></div>
         <div><span>DELIVERY RANGE</span><strong>Web · Mobile · AI</strong></div>
       </section>
@@ -319,13 +319,23 @@
       <section class="cv-section" id="profile">
         <div class="section-label">PROFILE</div>
         <div class="section-body">
-          <p>Software Developer and Computer Science graduate with hands-on experience delivering responsive web platforms, authenticated full-stack products, Android interfaces and real-time AI-audio tooling. Comfortable translating requirements into accessible UI, application flows, admin systems, APIs and database-backed features, then carrying the work through testing and production deployment.</p>
+          <p>Software engineer building since 2022 in Python, TypeScript, Node.js and React, with direct experience training, evaluating and benchmarking neural models on PyTorch and CUDA. I review and debug code carefully, judge model output against objective metrics, record negative results instead of shipping unproven claims, and write the tests and documentation that make systems maintainable. I have shipped three live products end to end and work well independently and remotely.</p>
         </div>
       </section>
 
       <section class="cv-section" id="experience">
         <div class="section-label">EXPERIENCE</div>
         <div class="section-body">
+          <article class="experience-item">
+            <div class="item-heading">
+              <div><h2>AI Evaluation Contractor</h2><div class="item-meta">Mercor · Remote</div></div>
+              <span class="item-date">2026—PRESENT</span>
+            </div>
+            <ul>
+              <li>Evaluate AI output against written project guidelines, working independently and to deadlines.</li>
+            </ul>
+          </article>
+
           <article class="experience-item">
             <div class="item-heading">
               <div><h2>Independent Software Developer</h2><div class="item-meta">Product development · Abuja / Remote</div></div>
@@ -335,7 +345,8 @@
               <li>Delivered live products across community, fintech and AI-audio use cases, owning interface design, application flows, data integration and deployment.</li>
               <li>Built responsive public websites and protected admin experiences for content, media, submissions and day-to-day operations.</li>
               <li>Developed authenticated, database-backed product workflows using React, Next.js, TypeScript, Node.js, Clerk, Postgres and Drizzle ORM.</li>
-              <li>Built a Python desktop workflow for real-time voice processing, audio-device routing, authorized model management and local GPU training.</li>
+              <li>Built CineVoice Studio, a real-time speech-AI system in Python/CUDA, and trained a compact streaming accent-conversion model distilled from a larger teacher; scored it on held-out data with word error rate and mel error and documented the failures (student WER 0.31 against the teacher's 0.09) alongside the fix (0.18 to 0.13).</li>
+              <li>Added automated reliability work: long-call stress tests that track memory, a pytest suite and GitHub Actions CI.</li>
             </ul>
           </article>
 
@@ -358,6 +369,13 @@
         <div class="section-label">SELECTED PROJECTS</div>
         <div class="section-body">
           <article class="project-item">
+            <div class="project-heading"><h2>evalkit: AI Code Evaluation Toolkit</h2><span class="project-status source">OPEN SOURCE</span></div>
+            <div class="project-stack">Python · pytest · GitHub Actions · Cohen's kappa</div>
+            <p>Built an open-source toolkit that runs AI-written code against hidden tests in an isolated, time-limited process, scores correctness, edge-case robustness and quality with a written rubric, and reports which answer is better and which cases failed. Includes an inter-annotator agreement check, a test suite and CI.</p>
+            <div class="project-links"><a href="https://github.com/GARBATHEGREAT/evalkit" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="/projects/evalkit">Case study ↗</a></div>
+          </article>
+
+          <article class="project-item">
             <div class="project-heading"><h2>Bread of Life Divine Covenant Ministry</h2><span class="project-status">LIVE</span></div>
             <div class="project-stack">React · TypeScript · Vite / Vinext · Drizzle ORM · SQLite / D1</div>
             <p>Developed a responsive ministry website and protected administration dashboard for service information, sermons, events, galleries, pastors, community content, uploads, social links and visitor submissions.</p>
@@ -374,8 +392,15 @@
           <article class="project-item">
             <div class="project-heading"><h2>CineVoice Studio</h2><span class="project-status">LIVE</span></div>
             <div class="project-stack">Python 3.12 · PySide6 · FastAPI · CUDA / RVC · RMVPE · Audio DSP</div>
-            <p>Developed a Windows-first voice workspace for low-latency microphone routing, authorized RVC conversion, recording, voice-model management and RTX-oriented local training, with a companion live control interface.</p>
-            <div class="project-links"><a href="https://cinevoice-studio.vercel.app" target="_blank" rel="noopener noreferrer">Live workspace ↗</a><a href="/projects/cinevoice">Case study ↗</a></div>
+            <p>Developed a Windows-first voice workspace for low-latency microphone routing, authorized voice conversion, model management and local GPU training, with a live control interface. Research track: a streaming accent-conversion student model evaluated on held-out sentences, with ASR gating that rejects training targets that drop or change words, batched streaming inference (about 4x faster under load) and a reliability fallback when processing falls behind real time.</p>
+            <div class="project-links"><a href="https://cinevoice-studio.vercel.app" target="_blank" rel="noopener noreferrer">Live workspace ↗</a><a href="https://github.com/GARBATHEGREAT/cinevoice-studio-showcase" target="_blank" rel="noopener noreferrer">Write-up ↗</a><a href="/projects/cinevoice">Case study ↗</a></div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-heading"><h2>SpendWise</h2><span class="project-status source">PUBLIC SOURCE</span></div>
+            <div class="project-stack">Kotlin · Jetpack Compose · Android</div>
+            <p>Android expense tracker built in Kotlin and Jetpack Compose with unit tests and CI.</p>
+            <div class="project-links"><a href="https://github.com/GARBATHEGREAT/SpendWise" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
           </article>
 
           <article class="project-item">
@@ -394,7 +419,8 @@
           <div class="skill-block"><b>Backend & Data</b><span>Node.js, Express, FastAPI, REST APIs, SQL, Postgres, SQLite / D1, MongoDB, Drizzle ORM</span></div>
           <div class="skill-block"><b>Desktop & Mobile</b><span>Python, PySide6, Java, Android Studio, XML layouts, audio-device workflows</span></div>
           <div class="skill-block"><b>Product & Delivery</b><span>Git, GitHub, Vercel, Cloudflare tooling, debugging, requirements analysis, responsive QA, production deployment</span></div>
-          <div class="skill-block"><b>Applied AI / Audio</b><span>CUDA-based inference, RVC workflows, RMVPE pitch extraction, model libraries, local training and audio DSP controls</span></div>
+          <div class="skill-block"><b>AI Evaluation &amp; ML</b><span>Code review of AI output, hidden-test and rubric scoring, word error rate and mel-error metrics, ablation studies, annotator agreement (Cohen's kappa), PyTorch, dataset curation and validation</span></div>
+          <div class="skill-block"><b>Applied AI / Audio</b><span>CUDA-based inference, Whisper, HuBERT, model distillation, streaming inference, pytest, local GPU training and audio DSP controls</span></div>
           <div class="skill-block"><b>Professional</b><span>Problem solving, teamwork, communication, leadership, critical thinking, adaptability and continuous learning</span></div>
         </div>
       </section>

@@ -103,9 +103,9 @@
   const filterStatus = qs('#filterStatus');
   if (filterButtons.length && projectCards.length) {
     const filterCopy = {
-      all: 'Showing all four projects.',
+      all: 'Showing all five projects.',
       web: 'Showing two web and full-stack products.',
-      ai: 'Showing the AI and desktop audio product.',
+      ai: 'Showing the AI evaluation toolkit and the AI audio product.',
       mobile: 'Showing the Android healthcare application.'
     };
     filterButtons.forEach(button => button.addEventListener('click', () => {

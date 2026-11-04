@@ -30,11 +30,11 @@ const projects = {
   },
   'cinevoice': {
     number: '03', title: 'CineVoice Studio', eyebrow: 'AI / AUDIO PRODUCT', accent: 'violet',
-    summary: 'A Windows-first real-time voice application for clean microphone routing, authorized RVC conversion, voice-model management, recording and local GPU training.',
+    summary: 'A Windows-first real-time voice application for microphone routing, authorized voice conversion, model management and local GPU training, plus a research track that trains and evaluates a streaming accent-conversion model.',
     role: 'Product & Python Application Development', year: '2026', stack: ['Python 3.12', 'PySide6', 'FastAPI', 'CUDA / RVC', 'RMVPE'],
     challenge: 'Advanced voice-conversion workflows combine audio devices, GPU inference, model files and latency-sensitive controls that can easily overwhelm users.',
     contribution: 'I developed the desktop workflow, live audio controls, model library, authorized training flow, device routing and RTX 3050-oriented presets around a Python and CUDA inference stack.',
-    outcome: 'CineVoice packages a complex local AI-audio pipeline into a focused interface for calls, OBS, games and recordings, with consent and model licensing built into the workflow.',
+    outcome: 'CineVoice packages a complex local AI-audio pipeline into a focused interface with consent and licensing built in. On the research side I trained a compact (about 4M parameter) streaming student distilled from a larger teacher and scored it on held-out sentences with word error rate and mel error. The first student scored 0.31 against the teacher\'s 0.09; a recogniser-trained front end brought a later version from 0.18 to 0.13. Failed experiments are documented, not hidden.',
     live: 'https://cinevoice-studio.vercel.app', private: true, published: true
   },
   'gandj': {
@@ -45,6 +45,15 @@ const projects = {
     contribution: 'I built the authenticated multi-route product, dedicated chart and platform pages, TradingView workspace, MT5 demo flow, persisted user data, responsive states and safety gating.',
     outcome: 'GandJ Trading Platform V2 demonstrates end-to-end fintech product delivery for sandbox exploration while keeping real trading, live execution and customer funds disabled.',
     live: 'https://bitcoin-america.vercel.app', private: true, published: true
+  },
+  'evalkit': {
+    number: '05', title: 'evalkit', eyebrow: 'AI EVALUATION / OPEN SOURCE', accent: 'violet',
+    summary: 'An open-source toolkit for evaluating AI-written code: it runs each candidate answer against hidden tests, scores it with a written rubric and reports which answer is better and why.',
+    role: 'Design & Python Development', year: '2026', stack: ['Python', 'pytest', 'GitHub Actions', 'Cohen\'s kappa'],
+    challenge: 'AI-written code often looks right and passes the obvious example while failing on edge cases. Reviewing it consistently needs isolated execution, edge-case tests and a rubric a second reviewer can follow.',
+    contribution: 'I built a runner that executes each answer in a separate process with a timeout, a rubric scoring correctness, edge-case robustness and code quality, Markdown pairwise reports, an inter-annotator agreement check and a test suite with CI. Each task ships with plausible-but-wrong answers such as touching intervals, duplicate maximums and infinite loops.',
+    outcome: 'The report names the exact failing cases instead of a bare score, and the README documents how I judge an AI answer: run it, edge cases first, read the failures, then quality, and write the reason down.',
+    repo: 'https://github.com/GARBATHEGREAT/evalkit'
   }
 };
 
