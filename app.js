@@ -59,6 +59,7 @@ const projects = {
 
 app.get('/', (req, res) => res.render('home'));
 app.get('/cv', (req, res) => res.render('cv'));
+app.get('/design', (req, res) => res.render('design'));
 app.get('/projects/bitcoin-america', (req, res) => res.redirect(301, '/projects/gandj'));
 app.get('/projects/:slug', (req, res) => {
   const project = projects[req.params.slug];
