@@ -103,8 +103,8 @@
   const filterStatus = qs('#filterStatus');
   if (filterButtons.length && projectCards.length) {
     const filterCopy = {
-      all: 'Showing all five projects.',
-      web: 'Showing two web and full-stack products.',
+      all: 'Showing all six projects.',
+      web: 'Showing three web and full-stack products.',
       ai: 'Showing the AI evaluation toolkit and the AI audio product.',
       mobile: 'Showing the Android healthcare application.'
     };
